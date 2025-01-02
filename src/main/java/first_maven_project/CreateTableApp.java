@@ -12,7 +12,7 @@ public class CreateTableApp {
 		Statement st = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost/company", "root", "root");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/company", "root", "root");
 
 			st = con.createStatement();
 			boolean b = st.execute(
